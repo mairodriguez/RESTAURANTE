@@ -70,35 +70,30 @@ body {
   font-family: var(--fuente1);
 }
 /*------------------ TITULO DE LA PAGINA + IMAGEN --------------------*/
-.pag-presentacion{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .texto-imagenpresent{
+  width: 100%;
+  margin-block-start: 2%;
+  padding: 2%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-}
+  background-color: #0eb4c0;
 
-.texto-present{
+}
+.frase1{
+
+  display: flex;
+  flex-direction: row;
+  background-color: #ba2929;
+
+}
+.estilo-texto{
   font-family: var(--fuente2);
   font-size: 7rem;
 }
-
-.good{
-border-bottom: 3px solid #FDFF0A;
-}
-.img-bilbao{
- background-image: url(/imagenes/Starroja.svg);
- background-repeat: no-repeat;
- background-position-x: left;
-}
-.img-ensaladprin{
- position: absolute;
- z-index: -1;
- right: 20%;
- top: 40%;
+.frase2-ensalada{
+  display: flex;
 }
 
 
