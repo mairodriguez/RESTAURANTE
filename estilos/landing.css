@@ -37,6 +37,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 2%;
+  /* background-color: yellow; */
+  justify-content: space-between;
 }
 .nomb-logo {
   border: 1px solid black;
@@ -50,6 +52,9 @@ body {
 .navegador{
   position: relative;
   width: 50%;
+  font-family: var(--fuente1);
+  letter-spacing: .1rem;
+  font-variant-caps: all-petite-caps;
 }
 
 .menu{
@@ -69,8 +74,10 @@ body {
   color: rgb(0, 0, 0);
   font-family: var(--fuente1);
 }
-/*------------------ TITULO DE LA PAGINA + IMAGEN --------------------*/
-.texto-imagenpresent{
+
+/*------------------ --------------------------TITULO DE LA PAGINA + IMAGEN --------------------*/
+
+.pag-presentacion{
   width: 100%;
   margin-block-start: 2%;
   padding: 2%;
@@ -78,26 +85,84 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #0eb4c0;
-
 }
+
 .frase1{
 
   display: flex;
   flex-direction: row;
-  background-color: #ba2929;
+  align-items: flex-start;
+  column-gap: 4%;
+}
+
+.subrayado{
+  border: 3px solid #FDFF0A;
+  transform: rotate(-2.67deg);
+}
+
+.estilo-texto1{
+  font-family: var(--fuente2);
+  font-size: 7rem;
 
 }
 .estilo-texto{
   font-family: var(--fuente2);
   font-size: 7rem;
+  position: relative;
 }
+.front{
+  position: relative;
+  z-index: 1;
+}
+
+.estrella-roja {
+  position: absolute;
+  top: 148px;
+  z-index: 0;  
+
+  }
+
+
+
 .frase2-ensalada{
   display: flex;
 }
 
+.salad{
+  display: flex;
+  align-items:flex-start;
+}
 
-/*------ boton comprar------------- */
+
+/* animación salad */
+
+.rotate-center{
+  -webkit-animation: rotate-center 20s ease-in-out both;
+          animation: rotate-center 20s ease-in-out both;
+}
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+
+/*---------------------- boton comprar------------------------------------------------ */
 .comprar{
   display: flex;
   width: 100%;
@@ -144,7 +209,40 @@ body {
 .button:active {
   scale: 1;
 }
-/*----------------- ESLOGAN + MANCHAS AMARILLAS------------------------- */
+
+@media (min-width: 375px) and (max-width: 610px){
+  .manchitas-fondo{
+    background-image:none;
+  }
+  .navegador{
+    display: none;
+  }
+  .texto-imagenpresent{
+    /* background-color: yellow; */
+    align-items: center;
+  }
+ .frase1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    column-gap: 0;
+  }
+  .estilo-texto1, .estilo-texto{
+    font-family: var(--fuente2);
+    font-size: 6rem;
+  }
+  .salad{
+    scale: 70%;
+  }
+  .salad2{
+    display: none;
+  }
+
+
+
+
+
+/*----------------- ----------------------------ESLOGAN + MANCHAS AMARILLAS------------------------- */
 .texto-eslogan{
   margin-block-start: 10%;
   text-align: center;
