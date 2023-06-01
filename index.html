@@ -8,76 +8,89 @@
     <link rel="stylesheet" href="./estilos/landing.css">
 </head>
 <body>
-    <!-- -------INICIO DEL CONTENEDOR GENERAL--------------- -->
-    <div class="contenedorgeneral">
-        <div class="manchitas-fondo">
-            <!--------- INICIO DEL HEADER + NAVEGADOR------------------------ -->
-            <header class="header">
-                <div class="nomb-logo">
-                    <p>RUKULA SALAATI BILBAO</p>
-                </div>
-                <nav class="navegador">
-                    <img class="click" src="./imagenes/menu (2).png" alt="menu">
-                    <input type="checkbox" class="click" id="click">
-                    <label for="click" for="click" class="menu-btn">
-                    <i class="fas fa-bars"></i>
-                    </label>
-                    <ul class="menu">
-                        <li><a href="/index.html" class="modal-nav">Inicio</a></li>
-                        <li><a href="#contacto"class="modal-nav"> Contacto</a></li>
-                        <li><a href="#openModal" class="modal-nav"> log in</a></li>
-                        <li><a href="./form-registros.html" class="modal-nav"> log up</a></li>
-                        <li class="Dark"><li class="fa-solid fa-circle-half-stroke"></li></li>
-                    </ul>
-                </nav>
-            </header>
-            <!---------- PALABRAS DE PRESENTACION + ANIMACIÓN DEL PLATO------------->
-                <section class="pag-presentacion">
-                    <article class="texto-imagenpresent">
-                        <div class="frase1">
-            
-                            <div class="estilo-texto1">
-                                <p>GOOD</p>
-                                <hr class="subrayado">
-                            </div>
-                            <div class="salad">
-                                <img src="/imagenes/dedoarriba.png" alt="icono de mano ok">
-                            </div>
-                            <div  class="estilo-texto1">
-                                <p>Vibes</p>
-                                <img src="/imagenes/ensaladamov.png" alt="">
-                            </div>
-                        </div>
-                        <div class="frase2-ensalada">
-                         <div class="estilo-texto ">  
-                             <p class=" front">SALADS <br> Bilbao</p>
-                            <div class="estrella-roja">
-                                <img src="/imagenes/estrellaroja.png" alt="">
-                            </div>    
-                        <div class="comprar">
-                            <button class="button">COMPRAR</button>
-                             </div>
-                        </div>
-                         <div class="salad2"> 
-                             <img class="rotate-center" src="/imagenes/ensaladaprin.png" alt="">
-                         </div>
-                        </div>
-                     </article >    
-                </section>
-        </div>
-         <!------------------ INCIO DEL MAIN---------------- -->
-         <main> <!--problema con esto    -->
-            <article class="texto-eslogan">
-                <div class="textoesl">
-                    <p>¡DESCUBRE UN MUNDO DE MARAVILLAS CULINARIAS QUE DESPERTARÁN A TU GOURMET INTERIOR!</p>
-                </div>  
-            </article>
-
-         </main>
-    </div>
-
+ 
+    <!--------------------------------------------------FRASE INICIAL APP MOVIL-----------------------------------  -->
     
+    
+    <!--------- INICIO DEL HEADER + NAVEGADOR------------------------ -->
 
-    <script src="./js.js/jsprin.js"></script>
+    <header class="header">
+        <div class="nomb-logo">
+            <p>RUKULA SALAATI BILBAO</p> 
+        </div>
+        <img src="/imagenes/menu (2).png" alt="">
+    </header>
+    <main>
+        <article class="presentacion">
+           <div class="agrupar">
+            <div class="frase1-imagen textoestilo">
+                <p>GOOD</p>
+                <hr class="subrayado">
+                </div>
+                <img src="/imagenes/dedoarribamov.svg"">
+            </div>
+            <div class="frase2-imagen textoestilo"> 
+                <p class="vibes">Vibes</p> 
+                <img class="rotate-center"src="/imagenes/ensaladamov.png" alt="ensalada">
+            </div>
+            <div class="frase3 textoestilo"> <p>SALADS</p></div>
+            <div class="frase4-imagen textoestilo">
+                <div ><p class="bilbao"> Bilbao</p></div>
+                <div class="estrella-roja"><img src="/imagenes/Starroja.svg" alt=""></div>
+                <div class="estrellapunta"><img src="/imagenes/estrellapuntamov.png" alt=""></div>
+            </div>
+            <div class="comprar">
+                <button class="button">COMPRAR &#8594 </button>
+                 </div>
+        </article>
+    </main>
+        <!--------------CUERPO MENSAJE----------------------- -->
+    <section>
+    <!------------------------FRASECITA-----------------------------  -->
+        <article class="frase-estrellas">
+            <p class="textofrase">¡DESCUBRE UN MUNDO DE <br>MARAVILLAS CULINARIAS QUE <br>DESPERTARÁN 
+                A TU GOURMET  <br> INTERIOR!</p>
+        </article>
+    <!------------------------LOGO----------------------------  -->
+    <figure class="logo">
+        <img class="rotate-scale-down2" src="/imagenes/logomovil.svg" alt="">
+    </figure>
+
+    <!----------------------NOSOTRES---------------------------->
+    <article class="about">
+        <div class="nosotres"><p>Nosotres</p> <img src="/imagenes/dedoarribanosotres.png" alt=""></div>
+        <div class="foto-local"> <img src="/imagenes/localmov.png" alt=""></div>
+        <hr class="linea-nos">
+        <div class="texto-nosotres"> 
+           
+            <p>¡Bienvenide a nuestro<br> restaurante de ensaladas<br> naturales! <br>
+            Somos un equipo de locas por <br>las hojas, expertas en convertir
+            <br> vegetales en deliciosas obras<br> maestras. <br>
+           con una trayectoria de más de 10 <br>años, conocemos todos los 
+           <br> mercados donde adquirir las <br>mejores materias primas.</p>
+           <img class="bola-amarilla" src="/imagenes/amarillo bola.svg" alt=""></div>
+           <hr class="linea-nos">
+    </article>
+    <!---------------------REPARTO--------------------------->
+    <article class="reparto" >
+            <div class="moto"> 
+                <img src="/imagenes/motoicon.svg" alt="">
+                <div class="texto-reparto">  <span class="titular-reparto">Entrega rápida</span>
+                <p>We promise to deliver within 30 minuts.</p></div>
+             </div>
+             <div class="moto"> 
+                <img src="/imagenes/recogida.svg" alt="">
+                <div class="texto-reparto">  <span class="titular-reparto">Recogida</span>
+                <p>Ensaladas frescas directas hacia tu casa.</p></div>
+             </div>
+             <div class="moto"> 
+                <img src="/imagenes//cena.svg" alt="">
+                <div class="texto-reparto"> <span class="titular-reparto">Cena al momento</span>
+                <p>Ensaladas frescas directas hacia tu casa.</p></div>
+             </div>
+    </article>
+
+    </section>
+    
 </body>
 </html>

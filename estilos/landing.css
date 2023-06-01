@@ -23,150 +23,127 @@ body {
  background-color: var(--background-color);
 }
 
-/*--------------- INICION DEL HEADER + NAVEGADOR -------------------- */
-.manchitas-fondo{
-  width: 100%;
-  height: 100vh;
-  background-image: url("/imagenes/manchamor.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
+
+  /*--------------- INICION DEL HEADER + NAVEGADOR -------------------- */
+
+  @media (min-width: 375px) and (max-width: 720px){
+  .header{
+    display: flex;
+    justify-content: center;
+    column-gap: 20%;
+    align-items: center;
+    padding: 2%;
+    margin-top: 5%;
+    height: 50px;
+  }
+  .nomb-logo {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 20px;
+    padding: 0.4%;
+    font-size: 80%;
+    font-family: var(--fuente1);
+    letter-spacing: .2rem;
+    
+  }
 }
-.header{
+/* ---------------------------PRSENTACION---------------------------------- */
+
+@media (min-width: 375px) and (max-width: 720px){
+
+main {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 2%;
-  /* background-color: yellow; */
-  justify-content: space-between;
-}
-.nomb-logo {
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 0.4%;
-  font-size: 80%;
-  font-family: var(--fuente1);
-  letter-spacing: .2rem;
-  
-}
-.navegador{
-  position: relative;
-  width: 50%;
-  font-family: var(--fuente1);
-  letter-spacing: .1rem;
-  font-variant-caps: all-petite-caps;
-}
-
-.menu{
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-}
-
-.click{
-  position: absolute;
-  cursor: pointer;
-  opacity: 0;
-}
-
-.modal-nav{
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  font-family: var(--fuente1);
-}
-
-/*------------------ --------------------------TITULO DE LA PAGINA + IMAGEN --------------------*/
-
-.pag-presentacion{
   width: 100%;
-  margin-block-start: 2%;
-  padding: 2%;
+  justify-content: center;
+  margin-left: 2%;
+}
+
+.presentacion{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: left;
+  /* background-color: yellow; */
+  margin: 5%;
 }
-
-.frase1{
-
+.textoestilo{
+  font-family: var(--fuente2);
+  font-size: 6rem;
+  line-height: 100px;
+  text-decoration-line:solid #000000 50px ;
+}
+.agrupar{
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  column-gap: 4%;
+  align-items: baseline;
+  /* background-color: blue; */
+  width: 90%;
 }
-
 .subrayado{
   border: 3px solid #FDFF0A;
-  transform: rotate(-2.67deg);
 }
-
-.estilo-texto1{
-  font-family: var(--fuente2);
-  font-size: 7rem;
-
+.frase2-imagen{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 0;
+  /* background-color: yellow; */
+  width: 100%;
 }
-.estilo-texto{
-  font-family: var(--fuente2);
-  font-size: 7rem;
+.frase4-imagen{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 0;
+  width: 100%;
   position: relative;
 }
-.front{
-  position: relative;
-  z-index: 1;
-}
+  /* animación salad */
+  
+  .rotate-center{
+    -webkit-animation: rotate-center 20s ease-in-out both;
+            animation: rotate-center 20s ease-in-out both;
+  }
+  @-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
 
-.estrella-roja {
+.bilbao{
+  position: posi;
+}
+.estrella-roja{
   position: absolute;
-  top: 148px;
-  z-index: 0;  
-
-  }
-
-
-
-.frase2-ensalada{
-  display: flex;
+  scale: 80%;
+  z-index:-2;
+  left: -20px;
+  top: -10px;
 }
 
-.salad{
-  display: flex;
-  align-items:flex-start;
-}
-
-
-/* animación salad */
-
-.rotate-center{
-  -webkit-animation: rotate-center 20s ease-in-out both;
-          animation: rotate-center 20s ease-in-out both;
-}
-@-webkit-keyframes rotate-center {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-@keyframes rotate-center {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-
-/*---------------------- boton comprar------------------------------------------------ */
+/* ------------------------boton comprar------------------------------------- */
 .comprar{
   display: flex;
+  justify-content: center;
   width: 100%;
-  margin-block-start: 5%;
+  margin-block-start: 12%;
 }
 .button{
   cursor: pointer;
@@ -187,12 +164,12 @@ body {
   position: absolute;
   inset: 0;
   margin: auto;
-  width: 50px;
+  width: 70px;
   height: 50px;
   border-radius: inherit;
   scale: 0;
   z-index: -1;
-  background-color: rgb(193, 163, 98);
+  background-color:#FDFF0A;
   transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
@@ -209,169 +186,154 @@ body {
 .button:active {
   scale: 1;
 }
-
-@media (min-width: 375px) and (max-width: 610px){
-  .manchitas-fondo{
-    background-image:none;
-  }
-  .navegador{
-    display: none;
-  }
-  .texto-imagenpresent{
-    /* background-color: yellow; */
-    align-items: center;
-  }
- .frase1 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    column-gap: 0;
-  }
-  .estilo-texto1, .estilo-texto{
-    font-family: var(--fuente2);
-    font-size: 6rem;
-  }
-  .salad{
-    scale: 70%;
-  }
-  .salad2{
-    display: none;
-  }
+.movsalad{
+  display: none;
+}
+}
 
 
+/* ------------frasecita----------------- */
 
-
-
-/*----------------- ----------------------------ESLOGAN + MANCHAS AMARILLAS------------------------- */
-.texto-eslogan{
-  margin-block-start: 10%;
-  text-align: center;
+@media (min-width: 375px) and (max-width: 720px){
+.frase-estrellas{
   display: flex;
-  align-items: center;
   justify-content: center;
-  height: 60vh;
-  z-index: -1;
+  align-items: center;
+  margin-top: 15%;
 
 }
-.textoesl{
-  /* background-color: pink; */
-  width: 55%;
-  height: 30vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.textofrase{
   font-family: var(--fuente1);
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 1.1em;
+  height: 20vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
   background-image: url(/imagenes/grupoamarillostars.svg);
+  background-size:cover;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center;
 
+
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scale: 50%;
+  width: 100%;
+  margin-top: 0;
 }
 
 
 
+.rotate-scale-down2 {
+	-webkit-animation: rotate-scale-down 0.65s linear both;
+	        animation: rotate-scale-down 0.65s linear both;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 320px), (max-height: 480px) {
-  .header {
-    position: fixed;
+ @-webkit-keyframes rotate-scale-down {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+            transform: scale(1) rotateZ(0);
   }
-
-  .titulocaja {
-    margin-top: 15%;
+  50% {
+    -webkit-transform: scale(0.5) rotateZ(180deg);
+            transform: scale(0.5) rotateZ(180deg);
   }
-
-  .click {
-    opacity: 1;
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+            transform: scale(1) rotateZ(360deg);
   }
-
-  #click {
-    opacity: 0;
+}
+@keyframes rotate-scale-down {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+            transform: scale(1) rotateZ(0);
   }
-
-  .navegador .menu-btn i {
-    display: block;
-    width: 50%;
+  50% {
+    -webkit-transform: scale(0.5) rotateZ(180deg);
+            transform: scale(0.5) rotateZ(180deg);
   }
-
-  .navegador {
-    width: 10%;
-    margin-bottom: 5%;
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+            transform: scale(1) rotateZ(360deg);
   }
+}
+}
 
-  .navegador ul {
-    position: fixed;
-    left: -100%;
-    background: #111;
-    height: 90vh;
-    width: 50%;
-    text-align: center;
-    display: block;
-    flex-wrap: wrap;
-    transition: all 0.3s ease;
-  }
+.about{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.nosotres{
+  display: flex;
+  flex-direction:row ;
+  align-items: center;
+  font-family: var(--fuente2);
+  font-size: 4em;
+  margin-bottom: 5%;
+}
 
-  #click:checked ~ ul {
-    left: 0;
-  }
+.foto-local{
+  margin-bottom: 5%;
+}
 
-  .navegador  ul li {
-    width: 100%;
-    margin: 40px 0;
-  }
+.texto-nosotres{
+  font-family: var(--fuente1);
+  font-variant-caps: all-petite-caps;
+  text-align: center;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.bola-amarilla{
+  position: absolute;
+  z-index: -2;
 
-  .navegador  ul li a:hover {
-    background: none;
-    color: rgb(255, 0, 242);
-  }
+}
+.linea-nos{
+  width: 31px;
+height: 0px;
+border: 2px solid #000000;
+}
 
-  .navegador  ul li a {
-    /* width: 100%; */
-    color: white;
-    text-decoration: none;
-    margin-left: -100%;
-    display: block;
-    font-size: 20px;
-    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
+/* <!---------------------REPARTO---------------------------> */
+.reparto{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-top: 10%;
 
-  #click:checked ~ ul li a {
-    margin-left: 0px;
-  }
+}
+.moto{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
- }
+}
+.texto-reparto{
+  font-family: var(--fuente1);
+  font-size: 1em;
+  letter-spacing: 0.22em;
+  font-weight: 500;
+  width: 50%;
+  
+}
+.titular-reparto {
+font-weight: bold;
 
- 
+}
