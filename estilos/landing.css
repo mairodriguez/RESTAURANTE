@@ -69,7 +69,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: left;
-  background-color: yellow;
+  /* background-color: yellow; */
   margin: 5%;
 }
 .textoestilo{
@@ -258,7 +258,7 @@ main {
             transform: scale(1) rotateZ(360deg);
   }
 }
-
+/* ---------------------------------------nosotres--------------------------------------- */
 .about{
   display: flex;
   flex-direction: column;
@@ -271,8 +271,10 @@ main {
   flex-direction:row ;
   align-items: center;
   font-family: var(--fuente2);
+  /* font-size: clamp(0.5em, 1em, 1em); */
   font-size: 4em;
   margin-bottom: 5%;
+  flex-wrap: nowrap;
 }
 
 .foto-local{
@@ -332,6 +334,7 @@ font-weight: bold;
 .presentacion-desktop{
   display: none;
 }
+
 /* --------------------------suscripcion---------------------------------- */
 .suscripcion{
   display: flex;
@@ -351,24 +354,197 @@ font-weight: bold;
   column-gap: 5%;
   /* background-color: yellow; */
 }
-.texto-suscrip{
+.texto-suscip{
   position: relative;
+  top: 0;
+ 
 }
 .mancha-suscrip{
   position: absolute;
   z-index: -1;
-  top: 2400px;
-  right: 150px;
+  top: 0;
+  left: 2%;
   scale: 130%;
+  
 }
 .cuerpo-texto-suscrip{
   position: relative;
   display: flex;
   flex-direction: flex;
+  font-family: var(--fuente1);
+  text-align: center;
+  font-size: 1.2em;
+  /* background-color: blue; */
+  margin-top: 5%;
 }
-.otones-suscripcion{
+.botones-suscripcion{
   display: flex;
   flex-direction: flex;
+  column-gap: 2%;
+}
+.botones-suscripcion{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 80%;
+  margin-top:5%;
+  font-size: 0.5em;
+}
+
+/*--------------------------------------------------FOOTER-------------------------------------------------------*/
+
+
+.site-footer {
+  font-family: "Remboy";
+  width: 100%;
+  background-color: #B4A8E2;
+  /* padding: 45px 0 20px; */
+  font-size: 15px;
+  /* line-height: 24px; */
+  color:var(--letra);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  margin-top: 15%;
+  padding-top: 5%;
+}
+
+
+.site-footer hr {
+  font-family: "Remboy";
+  border-top-color: #bbb;
+  opacity: 0.5;
+}
+
+.site-footer hr.small {
+  font-family: "Remboy";
+  margin: 20px 0;
+}
+
+.site-footer h6 {
+  font-family: "Remboy";
+  color: var(--letra);
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+
+.site-footer a {
+  font-family: "Remboy";
+  color: var(--letra);
+}
+
+.site-footer a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer-links li {
+  display: block;
+}
+
+.footer-links a {
+  color: var(--letra);
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-footer .social-icons {
+  text-align: right;
+}
+
+.site-footer .social-icons a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-radius: 100%;
+  background-color: #33353d;
+}
+
+.copyright-text {
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .site-footer [class^="col-"] {
+      margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .site-footer {
+      padding-bottom: 0;
+  }
+
+  .site-footer .copyright-text,
+  .site-footer .social-icons {
+      text-align: center;
+  }
+}
+
+.social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.social-icons a {
+  background-color: #eceeef;
+  color: #818a91;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.logo {
+  color: #eb6857;
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+  color: #fff;
+  background-color: #29aafe;
+}
+
+.social-icons a.facebook:hover {
+  background-color: #3b5998;
+}
+
+.social-icons a.twitter:hover {
+  background-color: #00aced;
+}
+
+.social-icons a.linkedin:hover {
+  background-color: #007bb6;
+}
+
+.social-icons a.dribbble:hover {
+  background-color: #ea4c89;
 }
 
 
@@ -378,6 +554,9 @@ font-weight: bold;
 /* ------------------------------Estilos para versión móvil-------------------------------------------- */
 
 @media only screen and (max-width: 767px) {
+  .menu{
+    display: none;
+  }
   .presentacion-desktop {
     display: none;
   }
@@ -387,15 +566,48 @@ font-weight: bold;
   .localdeskt{
     display: none;
   }
+  .ensaladadeskt{
+    display: none;
+  }
 }
+@media (min-width: 480px) and (max-width: 599px) {
+  .textoestilo{
+    font-size: 7rem;
+  }
+}
+  
+
+
 
 /*------------------------------- Estilos para versión desktop--------------------------------------- */
 
 @media only screen and (min-width: 768px) {
+  .header{
+    /* background-color: yellow; */
+    width: 90%;
+    align-items: left;
+  }
+  .menu{
+    display: flex;
+    column-gap: 8%;
+  
+  }
+  .menu-deskt{
+    font-family: var(--fuente1);
+    font-size: 1.2em;
+    border: none;
+    background-color: transparent;
+  }
   .presentacion-mov{
     display: none;
   }
   .localmov{
+    display: none;
+  }
+  .ensaladamov{
+    display: none;
+  }
+  .menu-img{
     display: none;
   }
   .manchas-fondo{
@@ -572,8 +784,56 @@ font-weight: bold;
 }
 .texto-reparto p{
   margin-top: 11%;
+}
 
+.suscripcion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.imagen-texto-suscrip{
+  display: flex;
+  flex-direction: row;
+  font-family: var(--fuente1);
+  font-weight: bold;
+  font-size: 3em;
+  width: 100%;
+  justify-content:center;
+  align-items: center;
+  column-gap: 5%;
+  /* background-color: yellow; */
+}
+.texto-suscip{
+  position: relative;
+  top: 0;
+}
+.mancha-suscrip{
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 10%;
+  scale: 180%;
+}
+.cuerpo-texto-suscrip{
+  font-size: 2em;
+}
+.botones-suscripcion{
+  display: flex;
+  flex-direction: flex;
+}
+
+.botones-suscripcion{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 30%;
+  margin-top:3%;
+}
+.footer{
+  margin-top: 0;
 }
 
 
 }
+/*------------------------------- FIN Estilos para versión desktop--------------------------------------- */

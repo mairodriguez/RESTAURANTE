@@ -15,9 +15,14 @@
             <div class="nomb-logo">
                 <p>RUKULA SALAATI BILBAO</p> 
             </div>
-            <img src="/imagenes/menu (2).png" alt="">
+            <nav class="menu"> 
+                <button class="menu-deskt" onclick="">Rukula</button>
+                <button class="menu-deskt">About</button>
+                <button class="menu-deskt">Contacto</button>
+            </nav>
+            <img class="menu-img" src="/imagenes/menu (2).png" alt="">
         </header>
-   <!-- --------------------------------------------------------Desktop----------------------------- -->
+   <!-- -------------------------------------------------Desktop-------------------------------------------- -->
         <article class="presentacion-desktop">
             <div class="agrupar textoestilo-desktop">
                 <div class="frase-1-desktop "> 
@@ -68,9 +73,8 @@
                 <button class="button">COMPRAR &#8594 </button>
                  </div>
         </article>
-        <!--------------CUERPO MENSAJE----------------------- -->
     <section>
-    <!------------------------FRASECITA-----------------------------  -->
+    <!----------------------------------------------FRASECITA---------------------------------------------------  -->
         <article class="frase-estrellas">
             <p class="textofrase">¡DESCUBRE UN MUNDO DE <br>MARAVILLAS CULINARIAS QUE <br>DESPERTARÁN 
                 A TU GOURMET  <br> INTERIOR!</p>
@@ -80,16 +84,15 @@
         <img class="rotate-scale-down2 tamano-desktop" src="/imagenes/logomovil.svg" alt="">
     </figure>
 
-    <!----------------------NOSOTRES---------------------------->
+    <!------------------------------------------------NOSOTRES----------------------------------------------------------->
     <article class="about">
         <div class="nosotres"><p>Nosotres</p> <img  class="dedonosotres-deskt"  src="/imagenes/Frame 15.svg" alt=""> 
             <img class="dedomovil" src="/imagenes/dedoarribanosotres.png" alt=""></div>
         <div class="about-display-deskt">
-            <figure class="foto-local"> <img class="localdeskt" src="/imagenes/localdeskt.png" alt=""><img class="localmov" src="/imagenes/localmov.png" alt=""></figure>
+            <figure class="foto-local"> <img class="localdeskt" src="/imagenes/localdeskt.png" alt="" width="100%"><img class="localmov" src="/imagenes/localmov.png" alt=""></figure>
             <hr class="linea-nos">
-            <div class="texto-nosotres"> 
-            
-                <p>¡Bienvenide a nuestro<br> restaurante de ensaladas<br> naturales! <br>
+            <div class="texto-nosotres" > 
+                <p >¡Bienvenide a nuestro<br> restaurante de ensaladas<br> naturales! <br>
                 Somos un equipo de locas por <br>las hojas, expertas en convertir
                 <br> vegetales en deliciosas obras<br> maestras. <br>
             con una trayectoria de más de 10 <br>años, conocemos todos los 
@@ -98,7 +101,7 @@
             <hr class="linea-nos">
         </div>
     </article>
-    <!---------------------REPARTO--------------------------->
+    <!--------------------------------------------------REPARTO----------------------------------------------------->
     <article class="reparto" >
             <div class="moto"> 
                 <img class="iconos" src="/imagenes/motoicon.svg" alt="">
@@ -116,30 +119,83 @@
                 <p>Ensaladas frescas directas hacia tu casa.</p></div>
              </div>
     </article>
-    <!--------------------COMPRA-------------------------->
+    <!---------------------------------------------------COMPRA----------------------------------------------------->
     <article class="comprar">
         <p></p>
     </article>
 
     <article class="suscripcion">
         <div class="imagen-texto-suscrip">
-            <img src="/imagenes/ensaladasuscrip.png" alt="">
+            <img class="ensaladamov" src="/imagenes/ensaladasuscrip.png" alt=""> <img class="ensaladadeskt" src="/imagenes/ensaladasuscripdesktop.png" alt="">
             <div class="texto-suscip">
                 <p class="texto-suscrip">Suscribete a la <br> Newsletter & <br>recibe las noticias<br> más recientes</p>
-                <img class="mancha-suscrip" src="/imagenes/suscriptcionmov.svg" alt=""> 
+                <img class="mancha-suscrip" src="/imagenes/suscriptcionmov.svg" alt="">
             </div> 
         </div>
         <div class="cuerpo-texto-suscrip">
-            <p> Únete a nuestra familia culinaria <br> suscribiéndote y descubre un mundo de <br> sabores que te harán vibrar. <br> 
+            <p> Únete a nuestra familia culinaria <br> suscribiéndote y descubre un mundo de <br> sabores que te harán vibrar.<br> <br> 
 
                 ¡No te pierdas la oportunidad de deleitarte con <br> nuestras creaciones gastronómicas únicas!<br>  
                 ¡Suscríbete y déjate sorprender en cada visita!</p>
         </div>
-        <button class="botones-suscripcion"></button>
+        <div class="botones-suscripcion">
+         <button class="button btn-suscrip">TU EMAIL</button> 
+         <button class="button btn-suscrip">ÚNETE &#8594</button> 
+        </div>
     </article>
+     <!--------------------------------------------------FOOTER---------------------------------------------------------->
 
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>About</h6>
+                    <p class="text-justify">Lorem Ipsum is simply dummy text of the printing <br> and typesetting industry.</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h6>Categories</h6>
+                    <ul class="footer-links ">
+                    <li><a href="#">Website Design</a></li>
+                    <li><a href="#">UI Design</a></li>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Video Editor</a></li>
+                    <li><a href="#">Theme Creator</a></li>
+                    <li><a href="#">Plantillas</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                    <li><a href="#">Sobre nosotras/os</a></li>
+                    <li><a href="#">Contacta con nosotras/os</a></li>
+                    <li><a href="#">Contribuir</a></li>
+                    <li><a href="#">política de privacidad</a></li>
+                    <li><a href="#">mapa del sitio</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="small">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-12">
+                    <p class="copyright-text">Copyright © 2023 All Rights Reserved by
+                    <a href="#"><span class="logo">RUKULA SALAATI BILBAO.</span></a>
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12">
+                    <ul class="social-icons">
+                    <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a class="dribbble" href="#"><i class="fab fa-dribbble"></i></a></li>
+                    <li><a class="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        </footer>
     </section>
- <!--------------------------------------------------FRASE INICIAL DESKTOP-----------------------------------  -->
 
 </body>
 </html>
