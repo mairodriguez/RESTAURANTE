@@ -110,7 +110,7 @@
     font-size: 7rem;
     position: relative;
   }
-  .front{
+  .front {
     position: relative;
     z-index: 1;
   }
@@ -129,7 +129,6 @@
     display: flex;
     align-items:flex-start;
   }
-  
   
   /* animación salad */
   

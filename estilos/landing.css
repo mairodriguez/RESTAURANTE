@@ -17,16 +17,21 @@
     --colorlinea: #FDFF0A;
 }
 
+
 /* ------------------------INICIO DE BODY Y DEL DOCUMENTO--------------------- */
 
 body {
  background-color: var(--background-color);
 }
-
-
+@media (min-width: 620px) {
+  
+}
+.presentacion-desktop {
+display: flex;
+}
   /*--------------- INICION DEL HEADER + NAVEGADOR -------------------- */
 
-  @media (min-width: 375px) and (max-width: 720px){
+  
   .header{
     display: flex;
     justify-content: center;
@@ -48,10 +53,8 @@ body {
     letter-spacing: .2rem;
     
   }
-}
-/* ---------------------------PRSENTACION---------------------------------- */
 
-@media (min-width: 375px) and (max-width: 720px){
+/* ---------------------------PRSENTACION---------------------------------- */
 
 main {
   display: flex;
@@ -59,13 +62,14 @@ main {
   width: 100%;
   justify-content: center;
   margin-left: 2%;
+  /* background-color: yellow; */
 }
 
-.presentacion{
+.presentacion-mov{
   display: flex;
   flex-direction: column;
   align-items: left;
-  /* background-color: yellow; */
+  background-color: yellow;
   margin: 5%;
 }
 .textoestilo{
@@ -90,7 +94,7 @@ main {
   align-items: center;
   column-gap: 0;
   /* background-color: yellow; */
-  width: 100%;
+  width: 90%;
 }
 .frase4-imagen{
   display: flex;
@@ -127,9 +131,6 @@ main {
     }
   }
 
-.bilbao{
-  position: posi;
-}
 .estrella-roja{
   position: absolute;
   scale: 80%;
@@ -189,20 +190,16 @@ main {
 .movsalad{
   display: none;
 }
-}
-
 
 /* ------------frasecita----------------- */
 
-@media (min-width: 375px) and (max-width: 720px){
+
 .frase-estrellas{
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 15%;
-
 }
-
 .textofrase{
   font-family: var(--fuente1);
   font-weight: 400;
@@ -217,8 +214,6 @@ main {
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
-
-
 }
 
 .logo{
@@ -229,8 +224,6 @@ main {
   width: 100%;
   margin-top: 0;
 }
-
-
 
 .rotate-scale-down2 {
 	-webkit-animation: rotate-scale-down 0.65s linear both;
@@ -264,7 +257,6 @@ main {
     -webkit-transform: scale(1) rotateZ(360deg);
             transform: scale(1) rotateZ(360deg);
   }
-}
 }
 
 .about{
@@ -335,5 +327,253 @@ margin-top: 10%;
 }
 .titular-reparto {
 font-weight: bold;
+
+}
+.presentacion-desktop{
+  display: none;
+}
+/* --------------------------suscripcion---------------------------------- */
+.suscripcion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.imagen-texto-suscrip{
+  display: flex;
+  flex-direction: row;
+  font-family: var(--fuente1);
+  font-weight: bold;
+  font-size: 1.5em;
+  width: 100%;
+  justify-content:center;
+  align-items: center;
+  column-gap: 5%;
+  /* background-color: yellow; */
+}
+.texto-suscrip{
+  position: relative;
+}
+.mancha-suscrip{
+  position: absolute;
+  z-index: -1;
+  top: 2400px;
+  right: 150px;
+  scale: 130%;
+}
+.cuerpo-texto-suscrip{
+  position: relative;
+  display: flex;
+  flex-direction: flex;
+}
+.otones-suscripcion{
+  display: flex;
+  flex-direction: flex;
+}
+
+
+
+/* ----------------------------------------------QUERYS----------------------------------------------- */
+
+/* ------------------------------Estilos para versión móvil-------------------------------------------- */
+
+@media only screen and (max-width: 767px) {
+  .presentacion-desktop {
+    display: none;
+  }
+  .dedonosotres-deskt{
+    display: none;
+  }
+  .localdeskt{
+    display: none;
+  }
+}
+
+/*------------------------------- Estilos para versión desktop--------------------------------------- */
+
+@media only screen and (min-width: 768px) {
+  .presentacion-mov{
+    display: none;
+  }
+  .localmov{
+    display: none;
+  }
+  .manchas-fondo{
+    width: 100%;
+    height: 60rem;
+    background-image: url("/imagenes/manchitas-fondo.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+  .header{
+    margin-top: 0;
+    display: flex;
+    column-gap: 20%;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+  
+  }
+  .nomb-logo {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 20px;
+    padding: 0.4%;
+    font-size: 80%;
+    font-family: var(--fuente1);
+    letter-spacing: .2rem; 
+  }
+
+  .presentacion-desktop{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+.frase-1-desktop{
+  display: flex;
+  flex-direction: column;
+  column-gap: 20%;
+}
+
+.textoestilo-desktop{
+  font-family: var(--fuente2);
+  font-size: 6em;
+}
+.agrupar{
+  display: flex;
+  justify-content: center;
+  column-gap: 3%;
+  width: 90%;
+}
+.subrayado{
+  border: 4px solid #FDFF0A;
+  transform: rotate(-2.67deg);
+}
+.frase2-ensalada{
+  display: flex;
+  flex-direction: row;
+  column-gap: 5%;
+  width: 90%;
+  justify-content: center;
+
+}
+.texto-salad{
+  position: relative;
+  display: flex;
+  align-items: left ;
+  flex-direction: column;
+  z-index: 1;
+}
+.estrella-roja {
+  position: absolute;
+  top: 200px;
+  scale: 110%;
+  z-index: -2;  
+  }
+  .comprar{
+    justify-content: left;
+    margin-block-start: 5%;
+    width: 120%;
+    column-gap: 2%;
+    align-items: center;
+   }
+   .button{
+    width: 35%;
+    height:80%;
+   }
+   .frase-estrellas{
+    margin-top: 2%;
+   }
+  .textofrase{
+    width: 100%;
+    height: 50vh;
+    font-size: 2em;
+    background-size:70%;
+    margin-bottom: 0;
+  }
+  .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 0;
+    object-fit: cover;
+  }
+  .tamano-desktop{
+    scale: 150%;
+  }
+  .nosotres{
+    font-size: 9em; 
+  }
+  .dedomovil{
+    display: none;
+  }
+  .about{
+    margin-top: 2%;
+    margin-bottom: 5%;
+  }
+ .about-display-deskt{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content:center;
+  align-items: center;
+ }
+ .texto-nosotres{
+  width: 40%;
+  font-size: 1.5em;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  }
+  .linea-nos{
+  display: none;
+}
+.foto-local{
+  margin-bottom: 0%;
+}
+.localdeskt{
+  margin: 0;
+}
+.bola-amarilla{
+  scale: 150%;
+}
+.reparto{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+}
+.moto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5%;
+}
+.texto-reparto{
+  font-family: var(--fuente1);
+  font-size: 1em;
+  text-align: center;
+  letter-spacing: 0.22em;
+  font-weight: 500;
+  width: 50%;
+}
+.iconos{
+  scale: 220%;
+  margin-bottom: 11%;
+}
+.texto-reparto p{
+  margin-top: 11%;
+
+}
+
 
 }
