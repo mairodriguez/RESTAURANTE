@@ -1,0 +1,725 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: auto;
+  }
+  
+  /*---------- fuentes------------------- */
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;600&display=swap');
+  
+  @font-face {
+    font-family: "Remboy";
+    src: url(FUENTES/RemboyRegular.ttf);
+  }
+  
+  :root {
+    --background-color: #EFD4F0;
+    --letra: #000000;
+    --fuente1: 'Inter', sans-serif;
+    --fuente2: "Remboy";
+    --colorlinea: #FDFF0A;
+  }
+  
+  /* ------------------------INICIO DE BODY Y DEL DOCUMENTO--------------------- */
+  
+  body {
+    background-color: var(--background-color);
+  }
+  
+  /*--------------- INICION DEL HEADER + NAVEGADOR -------------------- */
+  .contenedorgeneral{
+    display: grid;
+    position: relative;
+   
+  }
+  .manchitas-fondo {
+    /* display: flex; */
+    width: 100%;
+    height: 100vh;
+    /* position: absolute; */
+    background-image: url("/imagenes/manchamor.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    /* background-color: yellow; */
+    justify-content: space-between;
+  }
+  
+  .nomb-logo {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0.4%;
+    font-size: 80%;
+    font-family: var(--fuente1);
+    letter-spacing: .2rem;
+  
+  }
+  
+  .navegador {
+    position: relative;
+    width: 50%;
+    font-family: var(--fuente1);
+    letter-spacing: .1rem;
+    font-variant-caps: all-petite-caps;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+  
+  .dark {
+    position: absolute;
+    right: 1rem;
+    top: 1.8rem;
+    color: var(--letra);
+    font-size: 1rem;
+    cursor: pointer;
+  
+  }
+  
+  
+  .click {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+  }
+  
+  .modal-nav {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: var(--fuente1);
+  }
+  
+  /*------------------ --------------------------TITULO DE LA PAGINA + IMAGEN --------------------*/
+  
+  .pag-presentacion {
+    width: 100%;
+    margin-block-start: 2%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .frase1 {
+  
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    column-gap: 4%;
+  }
+  
+  .subrayado {
+    border: 3px solid #FDFF0A;
+    transform: rotate(-2.67deg);
+  }
+  
+  .estilo-texto1 {
+    font-family: var(--fuente2);
+    font-size: 7rem;
+  
+  }
+  
+  .estilo-texto {
+    font-family: var(--fuente2);
+    font-size: 7rem;
+    position: relative;
+  }
+  
+  .front {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .estrella-roja {
+    position: absolute;
+    top: 148px;
+    z-index: 0;
+  
+  }
+  
+  
+  
+  .frase2-ensalada {
+    display: flex;
+  }
+  
+  .salad {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  
+  /* animación salad */
+  
+  .rotate-center {
+    -webkit-animation: rotate-center 20s ease-in-out both;
+    animation: rotate-center 20s ease-in-out both;
+  }
+  
+  @-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+    }
+  
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+    }
+  
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  /*---------------------- boton comprar------------------------------------------------ */
+  .comprar {
+    display: flex;
+    width: 100%;
+    margin-block-start: 5%;
+  }
+  
+  .button {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 34px;
+    background-color: transparent;
+    font-family: var(--fuente1);
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+  }
+  
+  .button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: rgb(193, 163, 98);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .button:hover::before {
+    scale: 3;
+  }
+  
+  .button:hover {
+    color: #212121;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98, 0.4);
+  }
+  
+  .button:active {
+    scale: 1;
+  }
+  
+  @media (min-width: 375px) and (max-width: 610px) {
+    .manchitas-fondo {
+      background-image: none;
+    }
+  
+    .navegador {
+      display: none;
+    }
+  
+    .texto-imagenpresent {
+      /* background-color: yellow; */
+      align-items: center;
+    }
+  
+    .frase1 {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      column-gap: 0;
+    }
+  
+    .estilo-texto1,
+    .estilo-texto {
+      font-family: var(--fuente2);
+      font-size: 6rem;
+    }
+  
+    .salad {
+      scale: 70%;
+    }
+  
+    .salad2 {
+      display: none;
+    }
+  
+  
+  
+  
+  
+    /*----------------- ----------------------------ESLOGAN + MANCHAS AMARILLAS------------------------- */
+    .texto-eslogan {
+      margin-block-start: 10%;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 60vh;
+      z-index: -1;
+  
+    }
+  
+    .textoesl {
+      /* background-color: pink; */
+      width: 55%;
+      height: 30vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: var(--fuente1);
+      font-weight: 400;
+      font-size: 1.5em;
+      background-image: url(/imagenes/grupoamarillostars.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+  
+    }
+  
+  
+  
+  
+    @media (max-width: 320px),
+    (max-height: 480px) {
+      .header {
+        position: fixed;
+      }
+  
+      .titulocaja {
+        margin-top: 15%;
+      }
+  
+      .click {
+        opacity: 1;
+      }
+  
+      #click {
+        opacity: 0;
+      }
+  
+      .navegador .menu-btn i {
+        display: block;
+        width: 50%;
+      }
+  
+      .navegador {
+        width: 10%;
+        margin-bottom: 5%;
+      }
+  
+      .navegador ul {
+        position: fixed;
+        left: -100%;
+        background: #111;
+        height: 90vh;
+        width: 50%;
+        text-align: center;
+        display: block;
+        flex-wrap: wrap;
+        transition: all 0.3s ease;
+      }
+  
+      #click:checked~ul {
+        left: 0;
+      }
+  
+      .navegador ul li {
+        width: 100%;
+        margin: 40px 0;
+      }
+  
+      .navegador ul li a:hover {
+        background: none;
+        color: rgb(255, 0, 242);
+      }
+  
+      .navegador ul li a {
+        /* width: 100%; */
+        color: white;
+        text-decoration: none;
+        margin-left: -100%;
+        display: block;
+        font-size: 20px;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+  
+      #click:checked~ul li a {
+        margin-left: 0px;
+      }
+    }
+  }
+  
+  
+  
+  
+  
+  
+  /* OUMA */
+  #food-items {
+    background: whitesmoke;
+    overflow: auto;
+    height: calc(100vh - 86px);
+  }
+  
+  #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    background: whitesmoke;
+    z-index: 1;
+  }
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  #header .address {
+    font-size: 20px;
+  
+  }
+  
+  #map {
+    font-size: 25px;
+    color: rgb(255, 0, 242);
+  }
+  
+  .your-address {
+    border: 1px solid indianred;
+    color: indianred;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+  }
+  
+  .add-box i {
+    font-size: 20px;
+  }
+  
+  #header select {
+    width: 150px;
+    overflow: hidden;
+    border: none;
+    outline: none;
+    background: none;
+    color: rosybrown;
+    padding: 0 5px;
+  }
+  
+  .food-items {
+    display: none;
+  }
+  
+  .cart-toggle {
+    display: block;
+  }
+  
+  .util i,
+  .user i {
+    font-size: 18px;
+    margin: 0 16px;
+    border: 1px solid rgb(255, 0, 242);
+    padding: 8px 16px;
+    color: rgb(255, 0, 242);
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .util i:active {
+    color: white;
+    background: rgb(255, 0, 242);
+  }
+  
+  #biryani,
+  #paneer,
+  #chicken,
+  #vegetable,
+  #chinese,
+  #south-indian {
+    margin-top: 40px;
+  }
+  
+  #paneer #item-card,
+  #vegetable #item-card {
+    background: rgb(218, 253, 188);
+  }
+  
+  #chinese #item-card,
+  #south-indian #item-card {
+    background: rgb(221, 243, 243);
+  }
+  
+  #category-name,
+  .item-menu {
+    margin: 10px;
+    font-size: 35px;
+    color: coral;
+    font-family: 'Aclonica', sans-serif;
+  }
+  
+  #item-card {
+    width: 180px;
+    height: 220px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    background: rgb(253, 221, 226);
+    cursor: pointer;
+    transition: 0.5s all step-end;
+  }
+  
+  #item-card:hover img {
+    transform: scale(1.2);
+  }
+  
+  #card-top {
+    display: flex;
+    margin: 5px 0;
+    justify-content: space-between;
+  }
+  
+  #rating {
+    padding: 7px;
+    color: goldenrod;
+    background: black;
+    font-size: 14px;
+    border-radius: 15px;
+  }
+  
+  .fa-heart-o {
+    padding: 6px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+  }
+  
+  .toggle-heart {
+    background: orangered;
+    color: white;
+  }
+  
+  #item-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    margin-bottom: 15px;
+    transition: 0.5s all ease-in-out;
+  }
+  
+  #item-name {
+    margin: 5px 0;
+    font-weight: 600;
+    color: darkslategray;
+    font-size: 18px;
+  }
+  
+  #item-price {
+    margin: 0;
+    color: rgb(2, 27, 27);
+    font-weight: 500;
+    font-size: 18px;
+  }
+  
+  .food-items {
+    display: none;
+  }
+  
+  .cart-toggle {
+    display: none;
+  }
+  
+  #cart-page {
+    background: white;
+    margin: 40px 10px;
+    margin-right: 50px;
+    padding: 20px 30px;
+    padding-bottom: 30px;
+    position: relative;
+  }
+  
+  #cart-title {
+    font-size: 35px;
+    margin: 0;
+    color: indianred;
+  }
+  
+  #cart-page table {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #cart-page table thead td {
+    font-size: 25px;
+    padding-bottom: 10px;
+  }
+  
+  .cart-btn {
+    outline: none;
+    border: none;
+    background: rgb(255, 0, 242);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    bottom: 30px;
+    margin: 15px 0;
+    cursor: pointer;
+  }
+  
+  #cart-page table tbody td {
+    padding: 10px 0;
+    font-size: 20px;
+  }
+  
+  #cart-page table tbody button {
+    outline: none;
+    border: none;
+    font-size: 16px;
+    background: none;
+    background: lightcoral;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+  
+  #cart-page table tbody img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+  }
+  
+  #checkout {
+    text-align: center;
+    margin: 40px auto;
+    border-radius: 5px;
+    background: white;
+    padding: 10px 20px;
+  }
+  
+  #checkout p {
+    margin: 15px 0;
+    float: left;
+  }
+  
+  #total-price,
+  #total-item {
+    font-size: 25px;
+    color: indianred;
+  }
+  
+  #delievery {
+    font-size: 20px;
+    color: limegreen;
+  }
+  
+  #cart {
+    background: whitesmoke;
+    padding-right: 30px;
+    overflow-y: scroll;
+  }
+  
+  .item-menu {
+    margin: 0;
+    font-size: 30px;
+    margin-top: 40px;
+    color: indianred;
+    background: whitesmoke;
+  
+  }
+  
+  .list-card {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+  }
+  
+  .list-card:hover {
+    background: rgb(255, 216, 222);
+  }
+  
+  .list-card:hover img {
+    transition: 0.5s all ease-in-out;
+    transform: scale(1.2);
+  }
+  
+  .list-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .list-name {
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(94, 43, 43);
+  }
+  
+  .taste-header {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    background: whitesmoke;
+  }
+  
+  #mobile-view {
+    display: none;
+  }
+  
+  #biryani {
+    margin-top: 10px;
+  }
+  
+  #m-total-amount {
+    display: none;
+  }

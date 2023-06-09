@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUKULA SALAATI BILBAO </title>
+    <link rel="stylesheet" href="./estilos/landing2.css">
+    <link rel="stylesheet" href="./estilos/productos.css">
+
+    <!----------FONT AWESOME -------->
+    <script src="https://kit.fontawesome.com/e1b4bb6642.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- -------INICIO DEL CONTENEDOR GENERAL--------------- -->
+    <div class="contenedorgeneral">
+        <div class="manchitas-fondo">
+            <!--------- INICIO DEL HEADER + NAVEGADOR------------------------ -->
+
+            <header class="header">
+                <div class="nomb-logo">
+                    <p>RUKULA SALAATI BILBAO</p>
+                </div>
+
+                <ul class="menu">
+                    <li><a href="/index.html" class="modal-nav">Inicio</a></li>
+                    <li><a href="#contacto" class="modal-nav"> Contacto</a></li>
+                    <li><a href="/iniciarsesion.html" class="modal-nav"> log in</a></li>
+                    <li><a href="/registrar.html" class="modal-nav"> log up</a></li>
+                    <li class="dark" id="dark"></li>
+                </ul>
+
+
+                <button class="openbtn" onclick="openNav()">☰</button>
+                <div id="mySidebar" class="sidebar">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+                    <div>
+                        <h2>Productos Seleccionados</h2>
+                    <p id="demo">0</p>
+                </div>
+            </header>
+
+            <!------------------------------------------------------FINAL DEL HEADER ----------------------------------------------------------------------------->
+            <!----------los 6 botones---------->
+            <div class="caja-btn">
+                <div class="botones-fila">
+                    <label class="boton" for="radio1">
+                        <img src="./imagenes/estrellamorada.png" alt="Foto del botón">
+                        <h4>DIABETICOS</h4>
+                    </label>
+                    <label class="boton" for="radio2">
+                        <img src="./imagenes/estrella-celiaco.png" alt="Foto del botón">
+                        <h4>CELIACOS</h4>
+                    </label>
+                    <label class="boton" for="radio3">
+                        <img src="./imagenes/estrella-lactosa.png" alt="Foto del botón">
+                        <h4>SIN LACTOSA</h4>
+                    </label>
+                </div>
+
+                <div class="botones-fila">
+                    <label class="boton" for="radio4">
+                        <img src="./imagenes/hipercolesterol.png" alt="Foto del botón">
+                        <h4>HIPERCOL</h4>
+                    </label>
+                    <label class="boton" for="radio5">
+                        <img src="./imagenes/todos-productos.png" alt="Foto del botón">
+                        <h4>TODAS</h4>
+                    </label>
+                    <label class="boton" for="radio6">
+                        <img src="./imagenes/estrella-vegano.png" alt="Foto del botón">
+                        <h4>VEGANO</h4>
+                    </label>
+                </div>
+            </div>
+
+            <img class="line" src="./imagenes/Line 11.png" alt="linea">
+            <!--------------------------------------------------los productos----------------------------------------------------------------------------------->
+            <main>
+                <!----------------DIABETICOS--------------->
+                <section class="playa">
+                    <input type="radio" name="radio" id="radio1" />
+                    <section class="tab1">
+                        <h2>Ensaladas para Diabeticos</h2>
+
+                        <article class="artizquierda">
+                            <img style="width: 20%;" class="img"
+                                src="./imagenes/ensalada1.png"
+                                alt="ensalada1" />
+                            <div class="texplaya">
+                                <h2 class="titarticle">espinacas con fresas y nueces</h2>
+                                <p class="text-Contenido">2 tazas de espinacas frescas, 1 taza de fresas frescas,
+                                    cortadas en rodajas, 1/4 taza de
+                                    nueces picadas, 2 cucharadas de vinagre balsámico</p>
+                                <input type="number" name="precio" disabled class="inputValor" value="10" class="input">
+                                <input type="number" class="cant1" >
+                                <button class="butonx1">x1</button>
+                                <button class="añadir">Añadir</button>
+                            </div>
+                        </article>
+
+
+
+                        <article class="artderecha">
+                            <img style="width: 20%;" class="img" src="./imagenes/ensalada2.png"
+                                alt="ensalada1" />
+                            <div class="texplaya">
+                                <h2 class="titarticle">pollo a la parrilla con aguacate </h2>
+                                <p class="text-Contenido">2 tazas de lechuga mixta, 4 onzas de pechuga de pollo a la
+                                    parrilla, en rodajas, 1/2
+                                    aguacate, en rodajas, 1/4 taza de tomates cherry, cortados por la mitad</p>
+                                    <input type="number" name="precio" id="" class="inputValor" value="8">
+                                <button class="butonx1">x1</button>
+                                <button class="añadir">Añadir</button>
+                            </div>
+                        </article>
+
+
+                        <article class="artizquierda">
+                            <img style="width: 20%;" class="img" src="./imagenes/ensalada3.png"
+                                alt="ensalada1" />
+                            <div class="textplaya">
+                                <h2 class="titarticle">Quinoa y vegetales</h2>
+                                <p class="text-Contenido">1 taza de quinoa cocida, 1 taza de pepinos, cortados en
+                                    cubitos, 1 taza de tomates
+                                    cherry, cortados por la mitad, 1/2 taza de pimiento rojo, cortado en cubitos</p>
+                                    <input type="number" name="precio" id="" class="inputValor" value="13">
+                                <button class="butonx1">x1</button>
+                                <button class="añadir">Añadir</button>
+                        </article>
+                    </section>
+                </section>
+
+
+
+                <!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+                <!----------------CELIACOS----------------->
+                <section class="ciudad">
+                    <input type="radio" name="radio" id="radio2" />
+                    <section class="tab2">
+                        <h2>Ensaladas para Celiacos</h2>
+
+                        <article class="artizquierda">
+                            <img style="width: 20%;"
+                                src="./imagenes/ensalada1.png"
+                                alt="ensalada1" />
+                            <div class="texplaya">
+                                <h2 class="titarticle">lechuga con tomate y queso</h2>
+                                <p>1 taza de quinoa cocida,1 calabacín mediano, cortado en rodajas, 1 berenjena mediana,
+                                    cortada en cubos,
+                                    1 pimiento rojo cortado en tiras, 1 cebolla roja, cortada en gajos</p>
+                                    <input type="number" name="precio" id="" class="inputValor" value="15">
+                                <button class="butonx1">x1</button>
+                                <button class="añadir">Añadir</button>
+                            </div>
+                        </article>
+
+
+
+                        <article class="artderecha">
+                            <img style="width: 20%;" src="./imagenes/ensalada2.png"
+                                alt="ensalada1" />
+                            <div class="texplaya">
+                                <h2 class="titarticle">Pollo con aguacate y maíz</h2>
+                                <p>2 tazas de lechuga mixta, 4 onzas de pechuga de pollo cocida, desmenuzada,1 aguacate,
+                                    cortado en cubos,1/2 taza de granos de maíz fresco</p>
+                                <input type="number" name="precio" id="" class="inputValor" value="8">
+                                <button class="butonx1">x1</button>
+                                <button class="añadir">Añadir</button>
+                            </div>
+                        </article>
+
+
+
+                        <article class="artizquierda">
+                            <img style="width: 20%;" src="./imagenes/ensalada3.png"
+                                alt="ensalada1" />
+                            <div class="textplaya">
+                                <h2 class="titarticle">Quinoa y vegetales</h2>
+                                <p>1 taza de quinoa cocida, 1 taza de pepinos, cortados en cubitos, 1 taza de tomates
+                                    cherry, cortados por la mitad, 1/2 taza de pimiento rojo, cortado en cubitos</p>
+                                    <input type="number" name="precio" id="" class="inputValor" value="12">
+                                <button class="butonx1">x1</button>
+                                <button class="añadir">Añadir</button>
+                            </div>
+                        </article>
+                    </section>
+                </section>
+
+                <!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+                <!----------------SIN LACTOSA---------------->
+                <section class="otras">
+                    <input type="radio" name="radio" id="radio3" />
+                    <section class="tab3">
+                        <h2>Ensaladas Sin Lactosa</h2>
+
+                        <article class="artizquierda">
+                            <img style="width: 20%;"
+                                src=""
+                                alt="ensalada1" />
+                            <div class="texplaya">
+                                <h2 class="titarticle">Quinoa y vegetales asados</h2>
+                                <p>1 taza de quinoa cocida,1 calabacín mediano, cortado en rodajas, 1 berenjena
+                                    mediana,
+                                    cortada en cubos,
+                                    1 pimiento rojo cortado en tiras, 1 cebolla roja, cortada en gajos</p>
+                                    <input type="number" name="precio" id="" class="inputValor" value="5">
+                                <button class="butonx1">x1</button>
+                                <button class="añadir">Añadir</button>
+                            </div>
+                        </article>
+
+
+                        <article class="artderecha">
+                            <img style="width: 20%;" src=""
+                                alt="ensalada1" />
+                            <div class="texplaya">
+                                <h2 class="titarticle">Pollo con aguacate y maíz</h2>
+                                <p>2 tazas de lechuga mixta, 4 onzas de pechuga de pollo cocida, desmenuzada,1
+                                    aguacate,
+                                    cortado en cubos,1/2 taza de granos de maíz fresco</p>
+                                    <input type="number" name="precio" id="" class="inputValor" value="7">
+                                <button class="butonx1">x1</button>
+                                <button class="añadir">Añadir</button>
+                            </div>
+                        </article>
+
+
+
+                        <article class="artizquierda">
+                            <img style="width: 20%;" src=""
+                                alt="ensalada1" />
+                            <div class="textplaya">
+                                <h2 class="titarticle">Quinoa y vegetales</h2>
+                                <p>1 taza de quinoa cocida, 1 taza de pepinos, cortados en cubitos, 1 taza de
+                                    tomates
+                                    cherry, cortados por la mitad, 1/2 taza de pimiento rojo, cortado en cubitos</p>
+                                    <input type="number" name="precio" id="" class="inputValor" value="9">
+                                <button class="butonx1">x1</button>
+                                <button class="añadir">Añadir</button>
+                            </div>
+                        </article>
+                    </section>
+                </section>
+                <!------------------------------------------------------------------------------------------------------------------------->
+                <!----------------HIPERCOLESTEROL------------ -->
+                <section class="reserva">
+                    <input type="radio" name="radio" id="radio4" />
+                    <section class="tab4">
+                        <h2>Hipercolesterol</h2>
+
+                        <article class="artizquierda">
+                            <img style="width: 20%;"
+                                src=""
+                                alt="ensalada1" />
+                            <div class="texplaya">
+                                <h2 class="titarticle">Quinoa y vegetales asados</h2>
+                                <p>1 taza de quinoa cocida,1 calabacín mediano, cortado en rodajas, 1 berenjena
+                                    mediana,
+                                    cortada en cubos,
+                                    1 pimiento rojo cortado en tiras, 1 cebolla roja, cortada en gajos</p>
+                                    <input type="number" name="precio" id="" class="inputValor" value="8">
+                                <button class="butonx1">x1</button>
+                                <button class="añadir">Añadir</button>
+                            </div>
+                        </article>
+
+
+                        <article class="artderecha">
+                            <img style="width: 20%;" src=""
+                                alt="ensalada1" />
+                            <div class="texplaya">
+                                <h2 class="titarticle">Pollo con aguacate y maíz</h2>
+                                <p>2 tazas de lechuga mixta, 4 onzas de pechuga de pollo cocida, desmenuzada,1
+                                    aguacate,
+                                    cortado en cubos,1/2 taza de granos de maíz fresco</p>
+                                    <input type="number" name="precio" id="" class="inputValor"  value="10">
+                                <button class="butonx1">x1</button>
+                                <button class="añadir">Añadir</button>
+                            </div>
+                        </article>
+
+
+
+                        <article class="artizquierda">
+                            <img style="width: 20%;" src=""
+                                alt="ensalada1" />
+                            <div class="textplaya">
+                                <h2 class="titarticle">Quinoa y vegetales</h2>
+                                <p>1 taza de quinoa cocida, 1 taza de pepinos, cortados en cubitos, 1 taza de
+                                    tomates
+                                    cherry, cortados por la mitad, 1/2 taza de pimiento rojo, cortado en cubitos
+                                </p>
+                                <input type="number" name="precio" id="" class="inputValor" value="11">
+                                <button class="butonx1">x1</button>
+                                <button class="añadir">Añadir</button>
+                            </div>
+                        </article>
+                    </section>
+                </section>
+                <!------------------------------------------------------------------------------------------------------------------------------------>
+                <!---------------- TODAS LAS ENSALADAS------------ -->
+                <section class="salade">
+                    <input type="radio" name="radio" id="radio5" />
+                    <section class="tab5">
+                        <h2>Todas las ensaladas </h2>
+
+                        <article class="artizquierda">
+                            <img style="width: 20%;"
+                                src=""
+                                alt="ensalada1" />
+                            <div class="texplaya">
+                                <h2 class="titarticle">Quinoa y vegetales asados</h2>
+                                <p>1 taza de quinoa cocida,1 calabacín mediano, cortado en rodajas, 1
+                                    berenjena mediana,
+                                    cortada en cubos,
+                                    1 pimiento rojo cortado en tiras, 1 cebolla roja, cortada en gajos</p>
+                                    <input type="number" name="precio" id="" class="inputValor" value="12">
+                                <button class="butonx1">x1</button>
+                                <button class="añadir">Añadir</button>
+                            </div>
+                        </article>
+
+
+                        <article class="artderecha">
+                            <img style="width: 20%;" src=""
+                                alt="ensalada1" />
+                            <div class="texplaya">
+                                <h2 class="titarticle">Pollo con aguacate y maíz</h2>
+                                <p>2 tazas de lechuga mixta, 4 onzas de pechuga de pollo cocida,
+                                    desmenuzada,1 aguacate,
+                                    cortado en cubos,1/2 taza de granos de maíz fresco</p>
+                                    <input type="number" name="precio" id="" class="inputValor" value="13">
+                                <button class="butonx1">x1</button>
+                                <button class="añadir">Añadir</button>
+                            </div>
+                        </article>
+
+
+
+                        <article class="artizquierda">
+                            <img style="width: 20%;" src=""
+                                alt="ensalada1" />
+                            <div class="textplaya">
+                                <h2 class="titarticle">Quinoa y vegetales</h2>
+                                <p>1 taza de quinoa cocida, 1 taza de pepinos, cortados en cubitos, 1 taza
+                                    de tomates
+                                    cherry, cortados por la mitad, 1/2 taza de pimiento rojo, cortado en
+                                    cubitos</p>
+                                    <input type="number" name="precio" id="" class="inputValor" value="9">
+                                <button class="butonx1">x1</button>
+                                <button class="añadir">Añadir</button>
+                            </div>
+                        </article>
+                    </section>
+                </section>
+                <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+                <!----------------------- VEGANO----------------------------->
+                <section class="ofertas">
+                    <input type="radio" name="radio" id="radio6" />
+                    <section class="tab6">
+                        <h2>Ensaladas para Veganos</h2>
+
+                        <article class="artizquierda">
+                            <img style="width: 20%;"
+                                src=""
+                                alt="ensalada1" />
+                            <div class="texplaya">
+                                <h2 class="titarticle">Quinoa y vegetales asados</h2>
+                                <p>1 taza de quinoa cocida,1 calabacín mediano, cortado en rodajas, 1
+                                    berenjena mediana,
+                                    cortada en cubos,
+                                    1 pimiento rojo cortado en tiras, 1 cebolla roja, cortada en gajos
+                                </p>
+                                <input type="number" name="precio" id="" class="inputValor" value="7">
+                                <button class="butonx1">x1</button>
+                                <button class="añadir">Añadir</button>
+                            </div>
+                        </article>
+
+
+                        <article class="artderecha">
+                            <img style="width: 20%;" src=""
+                                alt="ensalada1" />
+                            <div class="texplaya">
+                                <h2 class="titarticle">Pollo con aguacate y maíz</h2>
+                                <p>2 tazas de lechuga mixta, 4 onzas de pechuga de pollo cocida,
+                                    desmenuzada,1 aguacate,
+                                    cortado en cubos,1/2 taza de granos de maíz fresco</p>
+                                   -
+                            </div>
+                        </article>
+
+
+
+                        <article class="artizquierda">
+                            <img style="width: 20%;" src=""
+                                alt="ensalada1" />
+                            <div class="textplaya">
+                                <h2 class="titarticle">Quinoa y vegetales</h2>
+                                <p>1 taza de quinoa cocida, 1 taza de pepinos, cortados en cubitos, 1
+                                    taza de tomates
+                                    cherry, cortados por la mitad, 1/2 taza de pimiento rojo, cortado en
+                                    cubitos</p>
+                                    <input type="number" name="precio" id="" class="inputValor" value="9">
+                                <button class="butonx1">x1</button>
+                                <button class="añadir">Añadir</button>
+                            </div>
+                        </article>
+                    </section>
+                </section>
+                <!-------------Final de productos ----------------->
+                <!-- <img class="yummy" src="./imagenes/Group 69.png" alt=""> -->
+            </main>
+        </div>
+    </div>
+
+    
+    <script src="./js.js/carrito.js"></script>
+</body>
+
+</html>

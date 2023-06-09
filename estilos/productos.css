@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: auto;
+}
+
+/*---------- fuentes------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;600&display=swap');
+
+@font-face {
+  font-family: "Remboy";
+  src: url(FUENTES/RemboyRegular.ttf);
+}
+
+:root {
+  --background-color: #EFD4F0;
+  --letra: #000000;
+  --fuente1: 'Inter', sans-serif;
+  --fuente2: "Remboy";
+  --colorlinea: #FDFF0A;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+
+.caja-btn {
+
+  margin: auto;
+  margin-top: 2%;
+}
+
+.botones-fila {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 3em;
+}
+
+.boton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.boton img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.boton h4 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.line {
+  display: block;
+  margin: 0 auto;
+  margin-top: 4em;
+}
+
+.yummy {
+  width: 20%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+/* --------------------CONFIGURACIÓN DE LOS TABS---------------- */
+
+.lbl-menu {
+  text-align: center;
+  justify-content: space-evenly;
+
+}
+
+
+
+/* -----configuracíon para tabs -cada uno--------- */
+.playa section {
+  margin: 5%;
+  position: absolute;
+  transition: all 600ms ease;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.90);
+
+}
+
+.ciudad section {
+  margin: 5%;
+  position: absolute;
+  transition: all 600ms ease;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.90);
+
+}
+
+.otras section {
+  margin: 5%;
+  position: absolute;
+  transition: all 600ms ease;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.90);
+
+}
+
+.reserva section {
+  margin: 5%;
+  position: absolute;
+  transition: all 600ms ease;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.90);
+}
+
+.salade section {
+
+  margin: 5%;
+  position: absolute;
+  transition: all 600ms ease;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.90);
+
+}
+
+.ofertas section {
+
+  margin: 5%;
+  position: absolute;
+  transition: all 600ms ease;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.90);
+
+}
+
+
+
+#radio1,
+#radio2,
+#radio3,
+#radio4,
+#radio5,
+#radio6 {
+  display: none;
+
+}
+
+#radio1:checked~.tab1 {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+#radio2:checked~.tab2 {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+#radio3:checked~.tab3 {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+#radio4:checked~.tab4 {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+#radio5:checked~.tab5 {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+
+#radio6:checked~.tab6 {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+
+
+
+/* ------------TABS------------ */
+.titarticle {
+  font-size: 1.5rem;
+}
+
+.artizquierda {
+  width: 80%;
+  margin-bottom: 3%;
+  border: 3px solid rgba(191, 144, 117);
+  border-radius: 10px;
+  padding: 2%;
+  display: flex;
+  position: relative;
+  right: 4%;
+}
+
+.artizquierda img {
+  width: 30%;
+  height: 150px;
+  object-fit: cover;
+  object-position: top;
+  margin: 2%;
+}
+
+.artizquierda:hover {
+  -webkit-transform: scale(1);
+  transform: scale(0.9);
+  box-shadow: 5px 5px 20px rgba(255, 183, 0, 0.574);
+
+}
+
+
+/* ----------articulo lado derecho------------ */
+.artderecha {
+  width: 90%;
+  margin-bottom: 3%;
+  border: 3px solid rgba(191, 144, 117);
+  border-radius: 10px;
+  padding: 2%;
+  display: flex;
+  position: relative;
+  left: 1%;
+  justify-content: space-between;
+}
+
+.artderecha img {
+  width: 30%;
+  height: 150px;
+  object-fit: cover;
+  object-position: top;
+  margin: 2%;
+}
+
+.artderecha:hover {
+  -webkit-transform: scale(1);
+  transform: scale(0.9);
+  box-shadow: 5px 5px 20px rgba(255, 183, 0, 0.574);
+}
+
+/* ----------CSS GENERAL PARA LOS TABS-------- */
+.texplaya {
+  margin: 0% 5%;
+  text-align: center;
+}
+
+.precio {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  background-color: rgb(242, 65, 65);
+  border-radius: 20px 0 0 20px;
+  padding: 1%;
+}
+
+.lugar {
+  width: 40%;
+  font-size: 20px;
+  padding: 1px;
+  color: aliceblue;
+  border-radius: 20px;
+  text-transform: capitalize;
+  background-color: rgba(2, 67, 146, 0.797);
+}
+
+/* --------------- ASIDE- MI CARRITO----------------------------- */  */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  background-color: #fff;
+
+}
+
+#mySidebar {
+  width: 30%;
+  height: 200vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(241, 212, 254);
+  border: 3px solid rgb(96, 9, 116);
+  border-radius: 20px;
+
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#sidebar {
+  width: 250px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  width: 50px;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+
+
+/* section de productos */
